@@ -105,6 +105,8 @@ this process is called pickling.
 byte stream  ------> Python object hierarchy 
 While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
+https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/927/original/Pickle_Module.jpg?1629980924
+
 Q9: How are arguments passed by value or by reference in Python?
 Everything in Python is an object and all variables hold references to the objects. The reference values are according to the functions; 
 as a result, you cannot change the value of the references. However, you can change the objects if it is mutable.
@@ -143,3 +145,76 @@ Q13: What is the difference between a shallow copy and deep copy
 Shallow copy is used when a new instance type gets created and it keeps values that are copied whereas deep copy stores values that are already copied.
 
 A shallow copy has faster program execution whereas deep coy makes it slow.
+
+Q14: What are the common built-in data types in Python
+
+Types:
+
+1 :None Type:
+  Class Name	Description
+  NoneType	Represents the NULL values in Python
+
+2: Numeric Types:
+
+  Class Name	Description
+  int	Stores integer literals including hex, octal and binary numbers as integers
+  float	Stores literals containing decimal values and/or exponent signs as floating-point numbers
+  complex	Stores complex numbers in the form (A + Bj) and has attributes: real and imag
+  bool	Stores boolean value (True or False).
+
+3: Sequence Types:
+
+  Class Name	Description
+  list	Mutable sequence used to store collection of items.
+  tuple	Immutable sequence used to store collection of items.
+  range	Represents an immutable sequence of numbers generated during execution.
+  str	Immutable sequence of Unicode code points to store textual data.
+  
+ Q15: Callable Types ?
+ Callable types are the types to which function call can be applied. 
+ They can be user-defined functions, instance methods, generator functions,
+ and some other built-in functions, methods and classes.
+ 
+ Q16: What are global, protected and private attributes in Python
+ 
+  Global variables are public variables that are defined in the global scope.
+  To use the variable in the global scope inside a function, we use the global keyword.
+
+  Protected attributes are attributes defined with an underscore prefixed to their identifier eg. _sara. 
+  They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.
+
+  Private attributes are attributes with double underscore prefixed to their identifier 
+  eg. __ansh. They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made
+
+Q17: What is self in Python?
+In object-oriented programming, 
+whenever we define methods for a class, we use self as 
+the first parameter in each case. 
+
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
+
+    def make_sound(self):
+        print("Meow")
+Q18:  What is __init__ in python ?
+
+_init__ is a contructor method in Python and is automatically called to allocate memory 
+when a new object/instance is created. All classes have a __init__ method associated with them. 
+It helps in distinguishing methods and attributes of a class from local variables
+
+# class definition
+class Student:
+   def __init__(self, fname, lname, age, section):
+       self.firstname = fname
+       self.lastname = lname
+       self.age = age
+       self.section = section
+# creating a new object
+stu1 = Student("Sara", "Ansh", 22, "A2")
+
+ 
