@@ -1,3 +1,10 @@
+#fibonacci example
+# 0+1=1
+# 	1+2=3
+# 	   2+3=5
+# 		  3+5=8	
+# 			5+8=13
+
 first,second=0,1
 n = int(input("please give a number for fibonacci series : "))
 print("fibonacci series are : ")
