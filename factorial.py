@@ -1,3 +1,16 @@
+example of factorial= n! = (n - 1)! × n
+FACTORIAL	MULTIPLICATION	RESULT
+0!	1	1
+1!	1	1
+2!	1 × 2	2
+3!	1 × 2 × 3	6
+4!	1 × 2 × 3 × 4	24
+5!	1 × 2 × 3 × 4 × 5	120
+6!	1 × 2 × 3 × 4 × 5 × 6	720
+7!	1 × 2 × 3 × 4 × 5 × 6 × 7	5040
+8!	1 × 2 × 3 × 4 × 5 × 6 × 7 × 8	40,320
+9!	1 × 2 × 3 × 4 × 5 × 6 × 7 × 8 × 9	362,880
+
 n= int(input("input number you want factorial off"))
 
 
